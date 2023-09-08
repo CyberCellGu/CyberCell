@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+
+
+/* header css */
+
+.header {
+  height: 110px;
+  width: 100%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Orbitron", cursive;
+  font-weight: 900;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.header img {
+  margin:20px;
+}
+.navbar {
+  margin-left: auto;
+  padding: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+}
+.navbar li {
+  margin: 15px;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar button {
+  letter-spacing: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: rgba(36, 34, 34, 0.774);
+  cursor: pointer;
+}
+
+.material-symbols-outlined{
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* header and navbar css end */
+
+.hero-text{
+    display: block;
+    position:absolute;
+    top:200px;
+    left: 15%; 
+   white-space:nowrap;
+}
+
+.hero-text h1{
+   color: white;
+   font-size: 70px;
+    font-family: 'Fasthand', cursive;
+    line-height: 100px;
+
+}
+
+.hero-text span{
+    font-size: 90px;
+     
+}
+
+
+/* Globe */
+.globe{
+    overflow: hidden;
+    z-index: -1;
+
+}
+
+.feature-animation{
+    position: relative;
+    bottom: -30px;
+    right: -810px;
+   
+
+}

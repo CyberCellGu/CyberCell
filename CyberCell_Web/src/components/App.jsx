@@ -1,11 +1,15 @@
 
 import './App.css'
+import Hero from "./Hero"
 
 function App() {
  
   return (
     <>
-      <h1>Lets Start | Make your own Components and Css files then link in this Component (App)</h1>
+      <Hero/>
+      
+    
+     
     </>
   )
 }
