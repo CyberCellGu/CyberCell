@@ -4,7 +4,9 @@
 
 
 /* header css */
-
+body{
+  overflow: none;
+}
 .box{
   position: absolute;
   top:60%;
@@ -147,7 +149,7 @@
   justify-content: flex-start;
   align-items: center;
   padding-bottom: 5px;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(2px);
 }
 
 .header img {
