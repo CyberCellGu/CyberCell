@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/* FAQ.css */
+
+.faq-container {
+  font-family: 'Orbitron', sans-serif; /* Use Audiowide font */
+  background-color: #000000;  
+  color: white;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.faq-container h1 {
+  letter-spacing: 5px;
+}
+
+.faq-list {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  transition: border-bottom 0.2s; /* Add transition for smooth effect */
+}
+
+.faq-icon {
+  margin-right: 10px;
+  font-size: 24px;
+  transition: transform 0.2s;
+  transform: translateY(1px); /* Adjust this value as needed */
+}
+
+.faq-icon.open {
+  transform: rotate(0deg); /* Rotate the plus sign (+) */
+}
+
+.faq-icon.closed {
+  transform: rotate(0deg); /* Keep the minus sign (-) straight */
+}
+
+.faq-answer {
+  margin-top: 10px;
+}
