@@ -4,6 +4,10 @@
 
 
 /* header css */
+#vanta{
+  width: 100%;
+}
+
 
 .header {
   height: 110px;
@@ -72,7 +76,7 @@
 .hero-text h1{
    color: white;
    font-size: 70px;
-    font-family: 'Fasthand', cursive;
+   font-family: 'orbitron', sans-serif;
     line-height: 100px;
 
 }
