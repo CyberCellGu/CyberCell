@@ -4,11 +4,137 @@
 
 
 /* header css */
-#vanta{
-  width: 100%;
+
+.box{
+  position: absolute;
+  top:60%;
+  left: 25vw;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+  transform: translate(-50%,-50%);
+  color:#ffffff;
+  padding:20px 30px;
+  width:40vw;
+  backdrop-filter: blur(5px);
+}
+.box h1{
+  font-size:  90px;
+ 
+}
+
+.box input[name="readmore"]{
+  display: none;
+}
+
+.box span{
+  font-size: xx-large;
+  letter-spacing: 2px;
+}
+
+.box .des{
+  text-align: justify;
+  position: relative;
+  overflow:hidden;
+  max-height: 150px;
+  transition: 0.5s ease-in-out;
+}
+.box .des::before{
+  position: absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:50px;
+  transition: 0.5s ease-in-out;
+  content:'';
+ 
+}
+
+.box .button{
+  margin-top:25px;
+  text-align: center;
+  border: 1px solid white;
+}
+.box label{
+  text-align: center;
+  display: inline-block;
+  border:1px solid #000;
+  width:140px;
+  height:50px;
+  position: relative;
+  cursor: pointer;
+}
+.box label::before{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  content:attr(data-more);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box input[name="readmore"]:checked ~ .content label::before{
+  content:attr(data-less);
+}
+.box input[name="readmore"]:checked ~ .content .des{
+  max-height: 350px;
+}
+.box input[name="readmore"]:checked ~ .content .des::before{
+  height: 0px;
+}
+.content{
+  position: relative;
+}
+.content::before{
+  position: absolute;
+  bottom:50px;
+  right:5px;
+  width:40px;
+  height: 60px;
+  content:'';
+  background-image: url(../assets/img1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 1;
+  transition: 2s ease-in-out;
+}
+.content::after{
+  position: absolute;
+  bottom:0px;
+  right:0px;
+  transform: translate(70%,50%);
+  width:150px;
+  height: 100px;
+  content:'';
+  background-image: url(../assets/img2.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  z-index: 1;
+  transition: 2s ease-in-out;
+}
+.box input[name="readmore"]:checked ~ .content::before{
+  bottom:80%;
+  right:100%;
+  transform: rotate(-50deg);
+}
+.box input[name="readmore"]:checked ~ .content::after{
+  transform: translate(75%,55%) rotate(30deg);
 }
 
 
+
+
+
+
+
+.hero{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 .header {
   height: 110px;
   width: 100%;
@@ -21,6 +147,7 @@
   justify-content: flex-start;
   align-items: center;
   padding-bottom: 5px;
+  backdrop-filter: blur(5px);
 }
 
 .header img {
