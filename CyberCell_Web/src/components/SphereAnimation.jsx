@@ -2,8 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import anime from 'animejs';
 import './Hero.css'
 
-
-import CLOUDS from 'vanta/src/vanta.net'
 const SphereAnimation = () => {
   const sphereRef = useRef(null);
   const spherePathRefs = useRef([]);
@@ -44,7 +42,7 @@ const SphereAnimation = () => {
         anime({
           targets: spherePathEls[i],
           stroke: {
-            value: ['rgba(119, 44, 232, 0.68)', 'rgba(255,75,75,1)'],
+            value: ['rgba(119, 44, 232, 1)', 'rgba(255,75,75,1)'],
             duration: 500,
           },
           translateX: [2, -4],
@@ -111,7 +109,7 @@ const SphereAnimation = () => {
   return (
     
     <div className="sphere-animation" ref={sphereRef}>
-      <svg className="sphere" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440">
+      <svg className="sphere" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 440">
         <defs>
         <linearGradient id="sphereGradient" x1="25%" x2="25%" y1="0%" y2="75%">
           <stop stopColor="#373734" offset="0%" />

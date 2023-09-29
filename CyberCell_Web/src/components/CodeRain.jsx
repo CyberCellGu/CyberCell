@@ -1,31 +1,34 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-const CodeRain = () => {
+const CodeRain = ({Color}) => {
   const canvasRef = useRef(null);
   const [fps, setFps] = useState(20);
-  const [color, setColor] = useState('purple');
-  const [charset, setCharset] = useState('0123456789ABCDEF');
-  const [size, setSize] = useState(10);
+  // const [color, setColor] = useState("purple");
+  const [charset, setCharset] = useState('0123#!$^&456789ABCDEF');
+  const [size, setSize] = useState(16);
 
+  let color=Color;
+  
   const pRef = useRef([]);
   const intervalRef = useRef(null);
-
-  useEffect(() => {
+ 
+  useEffect(() => { 
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
     let w, h;
-
+  
     const resize = () => {
-      w = canvas.width = window.innerWidth;
+      w = canvas.width = window.innerWidth-20;
       h = canvas.height = window.innerHeight;
       pRef.current = Array(Math.ceil(w / size)).fill(0);
     };
 
     const random = (items) => items[Math.floor(Math.random() * items.length)];
 
-    const draw = () => {
+    const draw = () => { 
       ctx.fillStyle = 'rgba(0,0,0,.05)';
       ctx.fillRect(0, 0, w, h);
+
       ctx.fillStyle = color;
 
       ctx.font = size + 'px sans-serif';
@@ -61,13 +64,13 @@ const CodeRain = () => {
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
     }
-    setFps(value);
+    setFps(value); 
     intervalRef.current = setInterval(() => draw(), 1000 / value);
   };
 
-  return (
+  return (<>
       <canvas ref={canvasRef}></canvas>
-      
+     </>
   );
 };
 

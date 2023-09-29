@@ -2,88 +2,158 @@ import "./Hero.css";
 import logo from "../assets/cybercelllogoo.png";
 import SphereAnimation from './SphereAnimation';
 import CodeRain from "./CodeRain";
+import { useState } from "react";
+import icon from "../assets/hacker.png";
+
+function Hero() { 
+  const [color, setColor] = useState('purple');
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
+  const updateColor = (newColor) => {
+    setColor(newColor);
+  };
 
 
-function Hero() {
+
+
+  // faq
+  const [faqs, setFaqs] = useState([
+    {
+      question: 'What is Lorem Ipsum?',
+      answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      isOpen: false,
+    },
+    {
+      question: 'Why do we use it?',
+      answer: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      isOpen: false,
+    },
+    {
+      question: 'Where does it come from?',
+      answer: 'Contrary to popular belief, Lorem Ipsum is not simply random text.',
+      isOpen: false,
+    },
+  ]);
+
+  const toggleFAQ = (index) => {
+    const updatedFaqs = [...faqs];
+    updatedFaqs[index].isOpen = !updatedFaqs[index].isOpen;
+    setFaqs(updatedFaqs);
+  };
+
+
   return (
     <>
-<CodeRain/>
-   <div className="hero"> 
-      <div className="header">   
-        <a href="/">
-          <img width={110} src={logo}></img>
-        </a>
-        <div className="navbar">
-          <ul>
-            <a href="">
-              <li>Home</li>
-            </a>
-            <a href="">
-              <li>Events</li>
-            </a>
-            <a href="">
-              <li>Games</li>
-            </a>
-            <a href="">
-              <li>Hacktivists</li>
-            </a>
-            <a href="">
-              <li>About</li>
-            </a>
+      <CodeRain Color={color} />
 
-            <button>LOGIN</button>
+      <div className="hero"> 
+        <div className="header">   
+          <a href="/">
+            <img width={110} src={logo} alt="CyberCell Logo" />
+          </a>
+          <div className={`navbar ${navbarOpen ? "active" : ""}`}>
+            <ul>
+              <a href="">
+                <li>Home</li>
+              </a>
+              <a href="">
+                <li>Events</li>
+              </a>
+              <a href="#games">
+                <li>Games</li>
+              </a>
+              <a href="">
+                <li>Hacktivists</li>
+              </a>
+              <a href="">
+                <li>About</li>
+              </a>
 
-            <span className="material-symbols-outlined">favorite</span>
+              <button>LOGIN</button>
 
-          </ul>
+              <img
+                style={{ cursor: "pointer" }}
+                width={35}
+                src={icon}
+                alt="Hacker Icon"
+                onClick={() => {
+                  updateColor('green');
+                }}
+              />
+            </ul>
+          </div>
+          <div
+            id="mobile"
+            onClick={() => setNavbarOpen((prev) => !prev)}
+          >
+            <i id='bar' className={navbarOpen ? "fas fa-times" : "fas fa-bars"}></i>
+          </div>
         </div>
+
+        <div className="hero-main">
+          <div className="hero-text">
+            <h1>CyberCell Gu</h1>
+            Welcome to CyberCell GU, where we ignite Cybersecurity Awareness and Innovation. Join us in safeguarding the digital realm through cutting-edge events and initiatives. Our diverse team of dreamers, thinkers, and doers is united by a singular purpose to make the world better through knowledge. Join us today!
+          </div>
+
+          <div className="globe">
+            <SphereAnimation />
+          </div>
+        </div>
+
+        <div className="hero-data">
+          <div className="data">
+            <h1>10</h1>
+            <p>Events Conducted</p>
+          </div>
+          <div className="data">
+            <h1>50+</h1>
+            <p>Team Members</p>
+          </div>
+          <div className="data">
+            <h1>2020</h1>
+            <p>Established</p>
+          </div>
+          <div className="data">
+            <h1>88ms</h1>
+            <p>avg. response time</p>
+          </div>
+        </div>
+
+        <div id="games" className="games">
+        <div className="games-details">
+        <h2>How much you know in cybersecurity?</h2>
+            <p>--Wanna test yourself?</p>
+            <p>--Play some Games with Us ---😍</p></div>   
+          <a href="/games">
+            <button className="btn">
+              <span className="btn__inner">
+                <span className="btn__slide"></span>
+                <span className="btn__content">Click Here</span>
+              </span>
+            </button>
+          </a>
+        </div> 
+        
+        
+        <div className="faq-container">
+      <h1>Frequently Asked Questions</h1>
+      <ul className="faq-list">
+        {faqs.map((faq, index) => (
+          <li className="faq-item" key={index}>
+            <div className="faq-question" onClick={() => toggleFAQ(index)}>
+              <span className={`faq-icon ${faq.isOpen ? 'open' : 'closed'}`}>{faq.isOpen ? '-' : '+'}</span>
+              {faq.question}
+            </div>
+            {faq.isOpen && <p className="faq-answer">{faq.answer}</p>}
+          </li>
+        ))}
+      </ul>
+    </div>
       </div>
 
-      {/* navbar end */}
-
-  
-
      
-    
-      
-      <div className="box">
-       <h1> Cybercell</h1>
-        <input type="checkbox" name="readmore" id="readmore"/>
-        <div className="content">
-            <div className="des">
-            <span>W</span>elcome to CyberCell GU , where we ignite Cybersecurity Awareness and Innovation. Join us in safeguarding the digital realm through cutting-edge events and initiatives. Unveil the enigma, empower change makers, and collaborate to break barriers.
-           Our tribe of cybersecurity enthusiasts, hackers, and tech visionaries is on a mission to disrupt the disruptors. From immersive workshops to boundary-pushing hackathons, CyberCell is your launchpad for groundbreaking innovation.
-           Our diverse team of dreamers, thinkers, and doers is united by a singular purpose – to make the world better through knowledge. Join us today!
-            </div>
-            <div className="button">
-                <label htmlFor="readmore"
-                    data-more="READ MORE"
-                    data-less="READ LESS"
-                ></label>
-            </div>
-        </div>
-    </div>
-
-
-
-  {/* globe start******************************** */}
-
- <div  className="globe">
-      <div className="feature-animation square-animation"> 
- 
-    <SphereAnimation/>
-
- </div>
-</div></div>
-
-
-{/* globe end**************************** */}
-
-
-
-
     </>
- 
   );
 }
 

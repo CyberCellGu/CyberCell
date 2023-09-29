@@ -1,19 +1,32 @@
+import "./App.css";
+import Hero from "./Hero";
+import Games from "./Games";
+import React from 'react';
 
-import './App.css'
-import Hero from "./Hero"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
- 
   return (
-    <>
-      <Hero/>
-     
+    <Router>
+      <Routes>
+        <Route path="/" element={
+          <>
 
-      
-    
-     
-    </>
-  )
+
+          <Hero/>
+        
+          {/* add your components here */}
+
+
+
+          </>
+        }/>
+         
+        <Route path="/games" Component={Games} />
+       
+      </Routes>
+    </Router>  
+  );
 }
 
 export default App;
