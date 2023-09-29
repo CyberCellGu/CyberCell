@@ -4,6 +4,7 @@ import SphereAnimation from './SphereAnimation';
 import CodeRain from "./CodeRain";
 import { useState } from "react";
 import icon from "../assets/hacker.png";
+import { Link } from "react-router-dom";
 
 function Hero() { 
   const [color, setColor] = useState('purple');
@@ -125,14 +126,14 @@ function Hero() {
         <h2>How much you know in cybersecurity?</h2>
             <p>--Wanna test yourself?</p>
             <p>--Play some Games with Us ---😍</p></div>   
-          <a href="/games">
+          <Link to="/games">
             <button className="btn">
               <span className="btn__inner">
                 <span className="btn__slide"></span>
                 <span className="btn__content">Click Here</span>
               </span>
             </button>
-          </a>
+          </Link>
         </div> 
         
         

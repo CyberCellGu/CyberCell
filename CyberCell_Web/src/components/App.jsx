@@ -9,20 +9,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={
-          <>
-
-
-          <Hero/>
-        
-          {/* add your components here */}
-
-
-
-          </>
-        }/>
-         
-        <Route path="/games" Component={Games} />
+        <Route path="/" Component={Hero}/>
+        <Route path="/games"  Component={Games}/>
        
       </Routes>
     </Router>  
