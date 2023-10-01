@@ -36,4 +36,13 @@
 - After running the development server, you can view the app at http://localhost:3000/
 
 ## Make changes as per issue assigned.
+ - Add your changes:
+- `git add .`
+- `git commit -m "Added Changes"`
+- `git push origin new-user`
+
+  # Open a Pull Request to main Repo from your profile page.
+   
+  # That's it Wolla
+  # You made your Contribution.
 
