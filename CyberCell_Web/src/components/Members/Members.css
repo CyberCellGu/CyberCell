@@ -1,0 +1,248 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowave:wght@400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+.flex{
+	display: flex;
+	align-items: center;
+}
+
+.title h1{
+	color: rgb(0, 0, 0) !important;
+	letter-spacing: 3px;
+	margin-bottom: 1px;
+	overflow: hidden;
+	white-space: nowrap; 
+	-webkit-text-stroke: 0.1vw #c2760b;
+	text-shadow: 3.5px 3.5px #443763;
+	font-size: 128px;
+	margin: 0 auto;
+	animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: orange; }
+  }
+  .content h1{
+	font-family: 'Orbitron', sans-serif;
+	font-size: 4.7rem;
+	text-align: left;
+	letter-spacing: 5px;
+	font-weight: 900;
+	color: #000000;
+	text-shadow: 2px 2px 10px rgb(119, 108, 209);
+
+}
+.content p{
+	font-weight: 100;
+	margin-bottom: 100px;
+	font-family: 'Audiowave', sans-serif;
+	flex-wrap: wrap;
+	color: rgb(0, 0, 0);
+	font-size: 1.2rem;
+}
+.content{
+	max-width: 700px;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	margin-inline: auto;
+	padding-inline: 20px ;
+	/* margin-right: 400px; */
+}
+
+.container{
+	padding: 10px;
+	/* background-image: url(./ContentPhoto.png) */
+	/* background-color: rgb(193, 101, 9); */
+	background: linear-gradient(#ea771a, rgb(30, 26, 26));
+	color: rgb(0, 0, 0);
+	height: 68vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+.image{
+	margin-block: 10px;
+	
+
+}
+.image img{
+	border: 2px solid rgb(0, 0, 0);
+	/* box-shadow: 0px 0px 10px rgb(119, 108, 209,0.5); */
+	border-radius: 10px;
+	z-index: 0;
+	height: 420px;
+	width: 600px;
+	margin-left: 10px;
+	object-fit: cover;
+	position: relative;
+}
+.image-overlay{
+	border-radius: 10px;
+	object-fit: cover;
+	z-index: 1;
+	height: 420px;
+	width: 600px;
+	margin-right: 50px;
+	position: relative;
+	bottom: -23px;
+	margin-right: 40px;
+	display: block;
+	transition: 0.2s ease-out;
+}
+.image-overlay:hover{
+	transform: scale(1.01);
+}
+.image-overlay:after{
+	border: 2px solid rgb(0, 0, 0);
+	margin-left: 10px;
+	border-radius: 10px ;
+	position: absolute;
+    content:"";
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgba(7, 16, 141, 0.65) 100%);
+}
+
+
+.image img:after{
+	position: absolute;
+	margin-left: 10px;
+    content:"";
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: linear-gradient(to bottom, rgba(255,0,0,0) 0%,rgba(255,0,0,0.65) 100%);
+}
+.image img:hover{
+	transform: scale(1.01);
+}
+.title{
+	font-size: 3rem;
+	font-weight: 700;
+	text-align: center;
+	font-family: 'Orbitron';
+}
+
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px;
+	background-color: rgba(255, 255, 255,0.1);
+	backdrop-filter: blur(1px);
+	border-radius: 40px;
+	padding: 40px;
+	box-shadow: 0px 0px 10px rgba(255, 255, 255,0.4);
+	margin-bottom: 300px;
+  }
+  .members{
+	/* background-color: rgb(36, 36, 36); */
+	background-image: url('/photos/Cybernetic Human@1-1440x714.jpg');
+	position: absolute;
+
+  }
+
+  
+  .team-member {
+    text-align: center;
+	/* background-color: rgb(255, 255, 255); */
+	padding: 20px;
+	width: 250px;
+	border-radius: 30px;
+
+  }
+  
+  .member-photo {
+    width: 250px; /* Adjust the size as needed */
+    height: 250px; /* Adjust the size as needed */
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden;
+	border: 5px solid rgb(253, 253, 253);
+	box-shadow: 0px 0px 30px rgba(119, 108, 209, 0.5);
+	/* transition: 0.1s ease-out; */
+	position: relative;
+	border: 2px solid rgb(119, 108, 209);
+	transition: transform .2s ease-out; 
+  }
+  .member-photo:hover{
+	transform: scale(1.05);
+  }
+  
+  
+  .member-photo img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+  }
+  
+  
+  .member-name {
+    margin-top: 10px;
+    font-weight: 900;
+	text-align: center;
+	color: #e28a0d;
+	font-family:  Orbitron, sans-serif;
+	font-size: 1.1rem;
+	letter-spacing: 2px;
+	-webkit-text-stroke: 0.0001px black;
+  }
+  @media(max-width: 600px){
+	.container{
+		width: 100%;
+	}
+	.content h1{
+		font-size: 2.1rem;
+	}
+	.image img{
+		/* width: 350px; */
+
+		margin-top: 100px;
+		position: relative;
+		bottom: 100px;
+		width: 100%;
+		height: 100%;
+	}
+	.image-overlay{
+		width: 88%;
+		height: 100%;
+		position: relative;
+		bottom: 70px;
+		margin-bottom: -100px;
+
+	}
+	.members{
+		width: 100%;
+	}
+	.title h1{
+		margin-top: 30px;
+		font-size: 2.5rem;
+	}
+	
+  }
