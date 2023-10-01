@@ -12,10 +12,13 @@ function Hero() {
   const updateColor = (newColor) => {
     setColor(newColor);
   };
-
-
-
-
+  //members
+  const teamMembers = [
+    { name: 'Shekhar Patel', photo: '/photos/SP.png' },
+    { name: 'Suvidh Kant', photo: '/photos/pic1.png' },
+    { name: 'Suman Sourav', photo: '/photos/SS.JPG' },
+    { name: 'Vivek Singh', photo: '/photos/IMG_20230822_100155 - Vivek Singh.jpg' }
+  ];
   // faq
   const [faqs, setFaqs] = useState([
     {
@@ -119,6 +122,34 @@ function Hero() {
             <p>avg. response time</p>
           </div>
         </div>
+        <div className="members">
+        <div className="title">
+          <h1>HACKTIVISTS</h1>
+        </div>
+        <div className="team-container">
+          {teamMembers.map((member, index) => (
+            <div key={index} className="team-member">
+              <div className="member-photo">
+                <img src={member.photo} alt={member.name} />
+              </div>
+              <div className="member-name">
+                {member.name}
+                
+              </div>
+
+              
+            </div>
+            
+            
+          ))}
+            <div className="button-container">
+           <a href="#"> Learn More</a>
+           </div>
+          
+        </div>
+        
+      </div>
+      
 
         <div id="games" className="games">
         <div className="games-details">
