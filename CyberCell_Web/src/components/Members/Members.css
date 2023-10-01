@@ -74,8 +74,9 @@ body{
 	/* background-color: rgb(193, 101, 9); */
 	background: linear-gradient(#ea771a, rgb(30, 26, 26));
 	color: rgb(0, 0, 0);
-	height: 68vh;
+	/* height: 68vh; */
 	display: flex;
+	text-align: center;
 	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -84,7 +85,6 @@ body{
 .image{
 	margin-block: 10px;
 	
-
 }
 .image img{
 	border: 2px solid rgb(0, 0, 0);
@@ -93,33 +93,26 @@ body{
 	z-index: 0;
 	height: 420px;
 	width: 600px;
-	margin-left: 10px;
+	margin-left: auto;
 	object-fit: cover;
-	position: relative;
+	
 }
 .image-overlay{
 	border-radius: 10px;
 	object-fit: cover;
 	z-index: 1;
 	height: 420px;
-	width: 600px;
-	margin-right: 50px;
-	position: relative;
-	bottom: -23px;
-	margin-right: 40px;
-	display: block;
+	width: 100%;
 	transition: 0.2s ease-out;
 }
-.image-overlay:hover{
-	transform: scale(1.01);
-}
+
 .image-overlay:after{
 	border: 2px solid rgb(0, 0, 0);
-	margin-left: 10px;
+
 	border-radius: 10px ;
 	position: absolute;
     content:"";
-    height:100%;
+    height:10px;
     width:100%;
     top:0;
     left:0;
@@ -153,21 +146,15 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    margin: 40px;
+    margin: 50px;
 	background-color: rgba(255, 255, 255,0.1);
 	backdrop-filter: blur(1px);
 	border-radius: 40px;
-	padding: 40px;
+	padding: 43px;
 	box-shadow: 0px 0px 10px rgba(255, 255, 255,0.4);
 	margin-bottom: 300px;
   }
-  .members{
-	/* background-color: rgb(36, 36, 36); */
-	background-image: url('/photos/Cybernetic Human@1-1440x714.jpg');
-	position: absolute;
-
-  }
-
+  
   
   .team-member {
     text-align: center;
@@ -230,11 +217,12 @@ body{
 		height: 100%;
 	}
 	.image-overlay{
-		width: 88%;
+		width: 100%;
 		height: 100%;
 		position: relative;
 		bottom: 70px;
 		margin-bottom: -100px;
+		margin: auto;
 
 	}
 	.members{

@@ -6,6 +6,8 @@ import { useState } from "react";
 import icon from "../assets/hacker.png";
 import { Link } from "react-router-dom";
 
+
+
 function Hero() { 
   const [color, setColor] = useState('purple');
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -13,6 +15,8 @@ function Hero() {
   const updateColor = (newColor) => {
     setColor(newColor);
   };
+
+
   //members
   const teamMembers = [
     { name: 'Shekhar Patel', photo: '/photos/SP.png' },
@@ -20,6 +24,9 @@ function Hero() {
     { name: 'Suman Sourav', photo: '/photos/SS.JPG' },
     { name: 'Vivek Singh', photo: '/photos/IMG_20230822_100155 - Vivek Singh.jpg' }
   ];
+
+
+
   // faq
   const [faqs, setFaqs] = useState([
     {
@@ -105,9 +112,10 @@ function Hero() {
           </div>
         </div>
 
+
         <div className="hero-data">
           <div className="data">
-            <h1>10</h1>
+            <h1>5</h1>
             <p>Events Conducted</p>
           </div>
           <div className="data">
@@ -119,11 +127,15 @@ function Hero() {
             <p>Established</p>
           </div>
           <div className="data">
-            <h1>88ms</h1>
-            <p>avg. response time</p>
+            <h1>Active 24/7</h1>
+            <p></p>
           </div>
         </div>
-        <div className="members">
+        
+
+
+  
+         <div className="members">
         <div className="title">
           <h1>HACKTIVISTS</h1>
         </div>
@@ -144,12 +156,14 @@ function Hero() {
             
           ))}
             <div className="button-container">
-           <a href="#"> Learn More</a>
+           <Link to="/members"> Learn More</Link>
            </div>
           
         </div>
         
       </div>
+
+       
       
 
         <div id="games" className="games">
@@ -166,8 +180,8 @@ function Hero() {
             </button>
           </Link>
         </div> 
-        
-        
+      
+      
         <div className="faq-container">
       <h1>Frequently Asked Questions</h1>
       <ul className="faq-list">
