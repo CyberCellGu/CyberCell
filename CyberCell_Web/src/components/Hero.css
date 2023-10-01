@@ -194,9 +194,8 @@ canvas{
   background-color: white;
   color: black;
   padding: 20px;
-  width: 50%;
   font-family: inherit;
-  box-shadow: 10px 10px 20px 5px #ffffff79;
+  box-shadow: 10px 10px 10px 5px #ffffff79;
   border-radius: 5px;
   margin: 10px 30px;
   border: 3px solid black;
@@ -438,7 +437,6 @@ canvas{
 .members{
 	/* background-color: rgb(36, 36, 36); */
 	background-image: url('/photos/Cybernetic Human@1-1440x714.jpg');
-  height: 580px;
 
   }
 
@@ -487,55 +485,35 @@ canvas{
 	-webkit-text-stroke: 0.0001px black;
   }
 
-.button-container a{
-  text-decoration: none;
-  color: #000;
-}
-.button-container {
+.button-container { 
+  animation: glowing 20s linear infinite;
+  transition: all .3s ease-in-out;
   cursor: pointer;
-  z-index: 0;
-  height: 35px;
+  /* z-index: 0; */
+  color: rgb(255, 255, 255);
+  /* height: 35px; */
   border-radius: 5px;
   text-decoration: none;
   padding: 25px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  position: absolute;
-  
-  top: 350px;
+
   background-color: #000000;
   font-family: orbitron, sans-serif;
-  color: #000;
+  font-weight: 700;
   border: 2px solid black;
 }
 
-.button-container:before {
-  content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-  position: absolute;
-  top: -2px;
-  left:-2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity .3s ease-in-out;
-  border-radius: 10px;
-  color: #000;
 
-}
 
 .button-container:active {
-  color: #000;
+  color: #f9f9f9;
 }
 
 .button-container:active:after {
   background: transparent;
-  color: #000;
+  color: #ffffff;
 
 
 }
@@ -545,18 +523,23 @@ canvas{
   color: #000;
 
 }
+.button-container:hover{
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  color: #000000;
+  font-size:large;
+}
 
 .button-container:after {
   z-index: -1;
   content: '';
-  position: absolute;
+  /* position: absolute;
   width: 100%;
-  height: 100%;
-  background: #e28a0d;
-  left: 0;
-  top: 0;
+  height: 100%; */
+  /* background: #e28a0d; */
+  /* left: 0;
+  top: 0; */
   border-radius: 10px;
-  color: #000;
+  color: #ffffff;
   border: 0.5px solid black;
 
 }
@@ -690,10 +673,14 @@ canvas{
     }
 
   .data{
-    padding-left:50px ;
-   margin-top: 30px;
+    padding-left:30px ;
+   margin-top: 20px;
    background-color: #292929e4;
    width: 100%;
+  }
+
+  .data h1{
+    font-size: large;
   }
 
   body{
@@ -710,5 +697,6 @@ canvas{
     gap: 90px;
    
   }
+
   
 }

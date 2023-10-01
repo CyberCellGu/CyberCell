@@ -155,9 +155,10 @@ function Hero() {
             
             
           ))}
-            <div className="button-container">
-           <Link to="/members"> Learn More</Link>
-           </div>
+
+           <Link className="button-container" to="/members"> 
+            Learn More</Link> 
+           
           
         </div>
         
