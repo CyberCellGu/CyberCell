@@ -152,7 +152,6 @@ body{
 	border-radius: 40px;
 	padding: 43px;
 	box-shadow: 0px 0px 10px rgba(255, 255, 255,0.4);
-	margin-bottom: 300px;
   }
   
   
@@ -227,10 +226,16 @@ body{
 	}
 	.members{
 		width: 100%;
+		margin: 0;
+	}
+	.team-container{
+		width: 100%;
+		margin: 0;
+		border-radius: 0;
 	}
 	.title h1{
 		margin-top: 30px;
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 	
   }
