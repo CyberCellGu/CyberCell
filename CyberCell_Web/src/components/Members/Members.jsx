@@ -41,9 +41,6 @@ function Members() {
         <div className="container">
           <div className="content">
             <h1>A community of cybersavvy superheroes </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugit laudantium debitis! Alias ipsum{" "}
-            </p>
             
           </div>
           <div className="image">
