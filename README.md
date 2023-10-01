@@ -1,8 +1,39 @@
-# React + Vite
+# 🧙‍♂️ Hacktober Fest 2023 `Good First`
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Project Glimpse: 
 
-Currently, two official plugins are available:
+![Screenshot 2023-10-02 013940](https://github.com/CyberCellGu/CyberCell-New/assets/77672838/5eccf200-c3c1-4a54-ad90-97cdbd913f9d)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+☄🌠 This year Marks the 10th anniversary of Hacktoberfest, and we all can Celebrate🎉
+
+🎯 Sign up for Hacktober, Learn and contribute towards Open Source, Fork repos make pull requests etc, and win digital swags and get a tree planted 🎄
+
+🎆 Open Sorcery Hacktoberfest 2023: Contribute to open source, learn. Beginner-friendly. Explore issues, fork, code, and make a global impact. Let's collaborate!
+
+🎐 Submit your first contribution to a participating project to get started with Hacktoberfest2023!
+
+# [Register For Hacktoberfest 2023](https://hacktoberfest.com/participation/) 👈
+
+# How to Contribute: 
+ ##  👨‍💻INSTRUCTIONS👩‍💻
+
+
+ ##  Contributions to the project are welcome. Please create an issue or get an issue assigned to youself first.
+
+ - Fork this Repository using the button at the top on right corner.
+ - Clone this repo to you local Machine `git clone https://github.com/CyberCellGu/CyberCell-New.git`
+
+ - Carve your own path with a new branch for your modifications and you can also do google search of how to push and open pull requests, this is a learning process (ie. `git branch new-user` or simply do `git checkout -b new-user`, Check all branches `git branch` to see all branches)
+
+ - Install dependencies:
+   
+ - `cd .\CyberCell_Web\`
+- `npm install`
+- Start the development server:
+- `npm run dev`
+- After running the development server, you can view the app at http://localhost:3000/
+
+## Make changes as per issue assigned.
+
