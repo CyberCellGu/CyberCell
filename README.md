@@ -33,7 +33,7 @@
 - `npm install`
 - Start the development server:
 - `npm run dev`
-- After running the development server, you can view the app at http://localhost:3000/
+- After running the development server, you can view the app at (http://localhost:5173/)
 
 ## Make changes as per issue assigned.
  - Add your changes:
