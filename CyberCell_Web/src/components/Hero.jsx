@@ -19,10 +19,10 @@ function Hero() {
 
   //members
   const teamMembers = [
-    { name: 'Shekhar Patel', photo: '/photos/SP.png' },
-    { name: 'Suvidh Kant', photo: '/photos/pic1.png' },
-    { name: 'Suman Sourav', photo: '/photos/SS.JPG' },
-    { name: 'Vivek Singh', photo: '/photos/IMG_20230822_100155 - Vivek Singh.jpg' }
+    // { name: 'Shekhar Patel', photo: '/photos/SP.png' },
+    // { name: 'Suvidh Kant', photo: '/photos/pic1.png' },
+    // { name: 'Suman Sourav', photo: '/photos/SS.JPG' },
+    // { name: 'Vivek Singh', photo: '/photos/IMG_20230822_100155 - Vivek Singh.jpg' }
   ];
 
 
@@ -156,7 +156,7 @@ function Hero() {
             
           ))}
 
-           <Link className="button-container" to="/members"> 
+           <Link className="button-container" to="/"> 
             Learn More</Link> 
            
           
