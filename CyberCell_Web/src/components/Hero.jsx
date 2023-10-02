@@ -5,6 +5,7 @@ import CodeRain from "./CodeRain";
 import { useState } from "react";
 import icon from "../assets/hacker.png";
 import { Link } from "react-router-dom";
+import Footer from "./Footer/Footer";
 
 
 
@@ -197,6 +198,7 @@ function Hero() {
         ))}
       </ul>
     </div>
+    <Footer />
       </div>
 
      
