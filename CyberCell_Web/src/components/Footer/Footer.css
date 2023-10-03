@@ -6,7 +6,9 @@
   font-size: 30px;
   font-family: "Orbitron", "cursive";
 }
-
+.footer-container {
+  position: relative;
+}
 .footer {
   height: 140px;
   display: flex;
@@ -14,6 +16,9 @@
   justify-content: space-between;
   background-color: #000000;
   padding: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 .social-icons {

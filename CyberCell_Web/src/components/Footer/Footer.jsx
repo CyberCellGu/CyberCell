@@ -4,7 +4,7 @@ import Logo from "./../../assets/cybercelllogoo.png";
 
 function Footer() {
   return (
-    <div>
+    <div className="footer-container">
       <div className="footer">
         <div className="logo-name">
           <a href="/">
