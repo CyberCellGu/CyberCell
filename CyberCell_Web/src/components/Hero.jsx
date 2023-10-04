@@ -53,8 +53,8 @@ function Hero() {
   return (
     <>
       <CodeRain Color={color} />
+      <Header updateColor={updateColor} />
       <div className="hero">
-        <Header />
         <div className="hero-main">
           <div className="hero-text">
             <h1>CyberCell Gu</h1>
@@ -143,8 +143,8 @@ function Hero() {
             ))}
           </ul>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }

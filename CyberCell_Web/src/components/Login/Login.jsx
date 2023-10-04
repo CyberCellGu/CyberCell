@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import './Login.css';
-import showHiddenPass from './Loginfunction'; // Import the function
+import React, { useState } from "react";
+import "./Login.css";
+import showHiddenPass from "./Loginfunction"; // Import the function
+import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 
 const Login = () => {
   // State to manage password visibility
@@ -12,14 +13,13 @@ const Login = () => {
   };
 
   return (
-    <div className="container">
+    <div className="login_container">
+      <img
+        src="https://assets.codepen.io/7773162/4kNYC.jpeg"
+        alt="login image"
+        className="login__img"
+      />
       <div className="login__content">
-        <img
-          src="https://assets.codepen.io/7773162/4kNYC.jpeg"
-          alt="login image"
-          className="login__img"
-        />
-
         <form action="" className="login__form">
           <div>
             <h1 className="login__title">
@@ -51,14 +51,22 @@ const Login = () => {
                 </label>
 
                 <div className="login__box">
-                  <input type={showPassword ? 'text' : 'password'} id="password" placeholder="Enter your password" required className="login__input"/>
+                  <input
+                    type={showPassword ? "text" : "password"}
+                    id="password"
+                    placeholder="Enter your password"
+                    required
+                    className="login__input"
+                  />
                   <i
                     className={`ri-eye${
-                      showPassword ? '-line' : '-off-line'
+                      showPassword ? "-line" : "-off-line"
                     } login__eye`}
                     id="input-icon"
                     onClick={togglePasswordVisibility}
-                  ></i>
+                  >
+                    {showPassword ? <AiFillEye /> : <AiFillEyeInvisible />}
+                  </i>
                 </div>
               </div>
             </div>
