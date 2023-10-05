@@ -4,8 +4,8 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
-  --first-color: #bd1a89;
-  --second-color: #843090;
+  --first-color: #bd7c1a;
+  --second-color: #905e30;
   --title-color: rgba(255, 255, 255, 0.9);
   --text-color: rgba(255, 255, 255, 0.7);
   --body-color: #01001f;
@@ -43,6 +43,7 @@ body {
   background-color: var(--body-color);
   font-family: var(--body-font);
   color: var(--text-color);
+  
 }
 
 input,
@@ -81,7 +82,7 @@ img {
 
 .login__form {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(57, 55, 55, 0.924);
   border: 2px solid rgba(255, 255, 255, 0.06);
   margin-inline: 1.5rem;
   row-gap: 1.25rem;
@@ -124,7 +125,7 @@ img {
   padding: 14px 12px;
   border-radius: 6px;
   border: 2px solid var(--text-color);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(69, 65, 65, 0.706);
   color: var(--title-color);
   font-size: var(--smaller-font-size);
   font-weight: var(--font-medium);
@@ -213,7 +214,7 @@ img {
 }
 
 .login__button-ghost {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(41, 35, 35, 0.556);
   border: 2px solid var(--first-color);
   color: var(--first-color);
   box-shadow: none;

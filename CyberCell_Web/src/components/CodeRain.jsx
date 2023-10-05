@@ -4,7 +4,7 @@ const CodeRain = ({Color}) => {
   const canvasRef = useRef(null);
   const [fps, setFps] = useState(20);
   // const [color, setColor] = useState("purple");
-  const [charset, setCharset] = useState('0123#!$^&456789ABCDEF');
+  const [charset, setCharset] = useState('0123#!$^&456789ABCDEFRLY');
   const [size, setSize] = useState(16);
 
   let color=Color;
