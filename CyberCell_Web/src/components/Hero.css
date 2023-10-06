@@ -89,21 +89,33 @@ body {
 
 /* header and navbar css end */
 
-.hero-main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  overflow-x: hidden;
+
+
+
+
+.hero-main{
+ display: flex;
+ flex-direction: row;
+ justify-content:space-between;
+ overflow-x: hidden;
+ font-size: bold;
 }
+
+
 .sphere {
   min-width: 1200px;
 }
 
+
+
+
+
+
 .hero-text {
-  min-width: 420px;
+  min-width: 500px;
+>
   font-family: orbitron;
   height: 300px;
-  background-color: rgb(36, 36, 36);
   letter-spacing: 2px;
   padding: 15px;
   margin: 100px 400px 20px 100px;
@@ -115,14 +127,45 @@ body {
   margin-bottom: 15px;
 }
 
+
+
 canvas {
+
   position: absolute;
   z-index: -10;
   width: 100%;
 }
 
+
+.botton {
+  display: absolute;
+  align-items: center;
+  justify-items: center;
+  margin: 100px auto;  
+  padding-left: 50px;
+}
+.explore {
+  width: 100%;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-right: 90px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.explore:hover {
+  opacity: 0.3;
+}
+
+.explore:hover {
+  background: black;
+}
+
+
+
 .hero-data {
   font-family: "Montserrat", sans-serif;
+
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

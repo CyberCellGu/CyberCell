@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Footer</title>
+    <link rel="stylesheet" href="boxicons.min.css">
+    <style>
+        /* CSS for the entire document, including the footer */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* CSS for the header */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* CSS for the footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* CSS for social media icons */
+        .social-icons {
+            list-style: none;
+            padding: 0;
+        }
+
+        .social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Cyber Cell</h1>
+    </header>
+    <footer>
+        <div>
+            <ul class="social-icons">
+                <li><a href="facebook" target="<i class='bx bxl-facebook-circle'></i>">Facebook</a></li>
+                <li><a href="#" target="<i class='bx bxl-twitter' ></i>">Twitter</a></li>
+                <li><a href="#" target="<i class='bx bxl-linkedin' ></i>">LinkedIn</a></li>
+                <li><a href="#" target="<i class='bx bxl-instagram-alt' ></i>">Instagram</a></li>
+            </ul>
+        </div>
+        <p>Made with ❤️ by Cyber Cell. All rights reserved &copy.</p>
+    </footer>
+</body>
+</html>

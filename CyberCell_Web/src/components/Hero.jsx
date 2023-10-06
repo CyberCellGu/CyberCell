@@ -4,11 +4,18 @@ import CodeRain from "./CodeRain";
 import { useState } from "react";
 import icon from "../assets/hacker.png";
 import { Link } from "react-router-dom";
+
+import CountUp from 'react-countup';
+import ScrollTrigger from 'react-scroll-trigger';
+
 import Footer from "./Footer/Footer";
 import Header from "./Header/header";
 
+
 function Hero() {
   const [color, setColor] = useState("purple");
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
 
   const updateColor = (newColor) => {
     setColor(newColor);
@@ -57,12 +64,15 @@ function Hero() {
       <div className="hero">
         <div className="hero-main">
           <div className="hero-text">
-            <h1>CyberCell Gu</h1>
-            Welcome to CyberCell GU, where we ignite Cybersecurity Awareness and
-            Innovation. Join us in safeguarding the digital realm through
-            cutting-edge events and initiatives. Our diverse team of dreamers,
-            thinkers, and doers is united by a singular purpose to make the
-            world better through knowledge. Join us today!
+<
+            <h1>CyberCell GU</h1>
+            <p>Welcome to CyberCell GU, where we ignite Cybersecurity Awareness and Innovation. Join us in safeguarding the digital realm through cutting-edge events and initiatives. Our diverse team of dreamers, thinkers, and doers is united by a singular purpose to make the world better through knowledge. Join us today!</p>
+            <div className="button">
+          <div className="explore">Explore More</div>
+        </div>
+
+           
+
           </div>
 
           <div className="globe">
@@ -70,17 +80,29 @@ function Hero() {
           </div>
         </div>
 
+
+      <ScrollTrigger>
+     
+
         <div className="hero-data">
+
           <div className="data">
-            <h1>5</h1>
+            <h1>
+              <CountUp start={0} end={5} duration={2} delay={0}/>
+            </h1>
             <p>Events Conducted</p>
           </div>
           <div className="data">
-            <h1>50+</h1>
+            <h1>
+            <CountUp start={0} end={50} duration={2} delay={0}/>
+            +
+            </h1>
             <p>Team Members</p>
           </div>
           <div className="data">
-            <h1>2020</h1>
+            <h1>
+              2020
+            </h1>
             <p>Established</p>
           </div>
           <div className="data">
@@ -88,6 +110,9 @@ function Hero() {
             <p></p>
           </div>
         </div>
+
+      </ScrollTrigger>
+
 
         <div className="members">
           <div className="title">
@@ -144,7 +169,11 @@ function Hero() {
           </ul>
         </div>
       </div>
+
+
+
       <Footer />
+
     </>
   );
 }
