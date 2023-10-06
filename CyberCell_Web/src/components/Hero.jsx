@@ -2,7 +2,7 @@ import "./Hero.css";
 import SphereAnimation from "./SphereAnimation";
 import CodeRain from "./CodeRain";
 import { useState } from "react";
-import icon from "../assets/hacker.png";
+// import icon from "../assets/hacker.png";
 import { Link } from "react-router-dom";
 
 import CountUp from 'react-countup';
@@ -14,7 +14,7 @@ import Header from "./Header/header";
 
 function Hero() {
   const [color, setColor] = useState("purple");
-  const [navbarOpen, setNavbarOpen] = useState(false);
+  // const [navbarOpen, setNavbarOpen] = useState(false);
 
 
   const updateColor = (newColor) => {
@@ -64,7 +64,7 @@ function Hero() {
       <div className="hero">
         <div className="hero-main">
           <div className="hero-text">
-<
+
             <h1>CyberCell GU</h1>
             <p>Welcome to CyberCell GU, where we ignite Cybersecurity Awareness and Innovation. Join us in safeguarding the digital realm through cutting-edge events and initiatives. Our diverse team of dreamers, thinkers, and doers is united by a singular purpose to make the world better through knowledge. Join us today!</p>
             <div className="button">
@@ -94,7 +94,7 @@ function Hero() {
           </div>
           <div className="data">
             <h1>
-            <CountUp start={0} end={50} duration={2} delay={0}/>
+            <CountUp start={0} end={50} duration={5} delay={0}/>
             +
             </h1>
             <p>Team Members</p>
