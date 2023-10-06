@@ -4,8 +4,8 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
-  --first-color: #bd1a89;
-  --second-color: #843090;
+  --first-color: #bd7c1a;
+  --second-color: #905e30;
   --title-color: rgba(255, 255, 255, 0.9);
   --text-color: rgba(255, 255, 255, 0.7);
   --body-color: #01001f;
@@ -43,6 +43,7 @@ body {
   background-color: var(--body-color);
   font-family: var(--body-font);
   color: var(--text-color);
+  
 }
 
 input,
@@ -66,21 +67,22 @@ img {
 
 .login__content {
   position: relative;
+  width: 100vw;
   height: 100vh;
   align-items: center;
 }
 
 .login__img {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
   object-position: center;
 }
 
 .login__form {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(57, 55, 55, 0.924);
   border: 2px solid rgba(255, 255, 255, 0.06);
   margin-inline: 1.5rem;
   row-gap: 1.25rem;
@@ -101,6 +103,7 @@ img {
 
 .login__description {
   font-size: var(--small-font-size);
+  color: aliceblue;
 }
 
 .login__inputs {
@@ -114,6 +117,7 @@ img {
   font-size: var(--small-font-size);
   font-weight: var(--font-semi-bold);
   margin-bottom: 0.25rem;
+  color: #bd1a89;
 }
 
 .login__input {
@@ -121,7 +125,7 @@ img {
   padding: 14px 12px;
   border-radius: 6px;
   border: 2px solid var(--text-color);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(69, 65, 65, 0.706);
   color: var(--title-color);
   font-size: var(--smaller-font-size);
   font-weight: var(--font-medium);
@@ -171,7 +175,9 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 0.25rem;
 }
-
+#input-icon {
+  color: #fff;
+}
 .login__check-input:checked {
   background: var(--first-color);
 }
@@ -186,6 +192,7 @@ img {
 
 .login__check-label {
   font-size: var(--small-font-size);
+  color: #fff;
 }
 
 .login__buttons {
@@ -195,7 +202,7 @@ img {
 
 .login__button {
   width: 100%;
-  padding: 14px 2rem;
+  padding: 14px 1rem;
   border-radius: 6px;
   background: linear-gradient(180deg, var(--first-color), var(--second-color));
   color: #fff;
@@ -207,7 +214,7 @@ img {
 }
 
 .login__button-ghost {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(41, 35, 35, 0.556);
   border: 2px solid var(--first-color);
   color: var(--first-color);
   box-shadow: none;
@@ -216,7 +223,7 @@ img {
 .login__forgot {
   font-size: var(--smaller-font-size);
   font-weight: var(--font-semi-bold);
-  color: var(--first-color);
+  color: aliceblue;
   text-decoration: none;
 }
 
@@ -238,7 +245,7 @@ img {
 
 /* For large devices */
 @media screen and (min-width: 1064px) {
-  .container {
+  .login_container {
     height: 100vh;
     display: grid;
     place-items: center;
@@ -247,10 +254,11 @@ img {
   .login__content {
     width: 1024px;
     height: 600px;
+    position: relative;
+    left: 5rem;
   }
 
   .login__img {
-    border-radius: 3.5rem;
     box-shadow: 0 24px 48px #024361;
   }
 
@@ -267,7 +275,7 @@ img {
 
   .login__form {
     row-gap: 2rem;
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 1.25rem;
     border: 2.5px solid rgba(255, 255, 255, 0.06);
   }

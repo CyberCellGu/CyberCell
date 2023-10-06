@@ -19,8 +19,10 @@
 # How to Contribute: 
  ##  👨‍💻INSTRUCTIONS👩‍💻
 
+ TECH Stack: Reactjs , Html/Css , Strapi , Vite, yarn/npm.
 
- ##  Contributions to the project are welcome. Please create an issue or get an issue assigned to youself first.
+
+ ##  Contributions to the project are welcome. Please create an issue or get an issue assigned to yourself first.
 
  - Fork this Repository using the button at the top on right corner.
  - Clone this repo to you local Machine `git clone https://github.com/your-username/CyberCell-New.git`
@@ -43,6 +45,6 @@
 
   # Open a Pull Request to main Repo from your profile page.
    
-  # That's it Wolla
+  # That's it Wolla If everthing goes without any error.
   # You made your Contribution.
 

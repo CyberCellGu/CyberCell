@@ -1,19 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 
 /* header css */
-body{
+body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-
-
 
 /* .hero{
   position: absolute;
@@ -24,7 +21,6 @@ body{
 } */
 
 .header {
-  
   height: 110px;
   width: 100%;
   letter-spacing: 2px;
@@ -37,10 +33,11 @@ body{
   align-items: center;
   padding-bottom: 5px;
   backdrop-filter: blur(2px);
+  position: relative;
 }
 
 .header img {
-  margin:20px;
+  margin: 20px;
 }
 .navbar {
   margin-left: auto;
@@ -60,17 +57,13 @@ body{
   text-decoration: none;
   color: white;
 }
-.navbar a:hover{
+.navbar a:hover {
   border-bottom: 1px solid rgb(255, 33, 33);
   border-bottom-width: 2px;
   border-radius: 50px;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
 }
-
-
-
-
 
 .navbar button {
   letter-spacing: inherit;
@@ -86,18 +79,16 @@ body{
   cursor: pointer;
 }
 
-
-
-.material-symbols-outlined{
-    padding: 10px;
-    cursor: pointer;
+.material-symbols-outlined {
+  padding: 10px;
+  cursor: pointer;
 }
-#mobile{
+#mobile {
   display: none;
 }
 
-
 /* header and navbar css end */
+
 
 
 
@@ -109,34 +100,42 @@ body{
  overflow-x: hidden;
  font-size: bold;
 }
-.sphere{
-  min-width: 1200px;
 
+
+.sphere {
+  min-width: 1200px;
 }
 
 
 
-.hero-text{
+
+
+
+.hero-text {
   min-width: 500px;
+>
   font-family: orbitron;
   height: 300px;
   letter-spacing: 2px;
   padding: 15px;
-  margin:100px 400px  20px 100px;
+  margin: 100px 400px 20px 100px;
   border-radius: 10px;
 }
 
-.hero-text h1{
+.hero-text h1 {
   font-size: 50px;
   margin-bottom: 15px;
 }
 
 
-canvas{
+
+canvas {
+
   position: absolute;
   z-index: -10;
   width: 100%;
 }
+
 
 .botton {
   display: absolute;
@@ -162,51 +161,42 @@ canvas{
   background: black;
 }
 
-.hero-data{
-  font-family: 'Montserrat', sans-serif;
+
+
+.hero-data {
+  font-family: "Montserrat", sans-serif;
+
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-   align-items: center;
-   padding: 30px;
-   background-color: rgb(36, 36, 36);
-   width: 100%;
-
+  align-items: center;
+  padding: 30px;
+  background-color: rgb(36, 36, 36);
+  width: 100%;
 }
 
-.data{
- border-left: 1px solid white; 
- padding: 10px 30px;
- border-image: 
-    linear-gradient(
-      to bottom, 
-      #ff4655, 
-      rgba(62, 9, 237, 0.567)
-    ) 1 100%;
+.data {
+  border-left: 1px solid white;
+  padding: 10px 30px;
+  border-image: linear-gradient(to bottom, #ff4655, rgba(62, 9, 237, 0.567)) 1
+    100%;
 }
 
-.data h1{
-  font-size:2.5rem;
+.data h1 {
+  font-size: 2.5rem;
   padding-bottom: 5px;
 }
 
-
-
-
-
-
-.games{
+.games {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 30px;
   font-family: Montserrat;
   letter-spacing: 2px;
- 
-
 }
 
-.games-details{
+.games-details {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -219,15 +209,11 @@ canvas{
   border: 3px solid black;
 }
 
-.games-details p{
+.games-details p {
   font-weight: 600;
   font-size: larger;
   color: #8e37ff;
 }
-
-
-
-
 
 /* button css */
 .btn {
@@ -242,32 +228,32 @@ canvas{
   cursor: pointer;
   letter-spacing: 5px;
   /* Clean style */
-  
- 
+
   --button-text-color-hover: var(--button-background-color);
-  --border-color: #7D8082;
+  --border-color: #7d8082;
   --button-background-color: #ffffff;
   --highlight-color: #ff4655;
   --button-inner-border-color: transparent;
   --button-bits-color: var(--background-color);
   --button-bits-color-hover: var(--button-background-color);
-  
+
   position: relative;
   padding: 8px;
   font-weight: bold;
   font-size: 14px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .btn::before,
 .btn::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
-  right: 0; left: 0;
+  right: 0;
+  left: 0;
   height: calc(50% - 5px);
   border: 1px solid var(--border-color);
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .btn::before {
@@ -309,42 +295,45 @@ canvas{
 }
 
 .btn__inner::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 2px;
   height: 2px;
   background-color: var(--button-bits-color);
 }
 
 .btn__inner::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
-  right: 0; bottom: 0;
+  right: 0;
+  bottom: 0;
   width: 4px;
   height: 4px;
   background-color: var(--button-bits-color);
-  transition: all .9s ease;
+  transition: all 0.9s ease;
 }
 
 .btn__slide {
   display: block;
   position: absolute;
-  top: 0; bottom: -1px; left: -8px;
+  top: 0;
+  bottom: -1px;
+  left: -8px;
   width: 0;
   background-color: var(--highlight-color);
   transform: skew(-15deg);
-  transition: all .9s ease;
+  transition: all 0.9s ease;
 }
 
 .btn__content {
   position: relative;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-weight: 700;
   font-size: larger;
-
 }
 
 .btn:hover {
@@ -360,25 +349,17 @@ canvas{
 }
 
 .btn--light {
- 
   --button-text-color: var(--highlight-color);
   --button-inner-border-color: var(--highlight-color);
   --button-text-color-hover: #ece8e1;
   --button-bits-color-hover: #ece8e1;
 }
 
-
-
-
-
-
-
-
 /* FAQ.css */
 
 .faq-container {
-  font-family: 'Orbitron', sans-serif; /* Use Audiowide font */
-  background-color: #000000;  
+  font-family: "Orbitron", sans-serif; /* Use Audiowide font */
+  background-color: #00000080;
   color: white;
   margin: 0 auto;
   padding: 20px;
@@ -424,88 +405,76 @@ canvas{
   margin-top: 10px;
 }
 
-
-
-.title{
-	font-size: 3rem;
-	font-weight: 700;
-	text-align: center;
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
   margin-bottom: -50px;
-	font-family: 'Orbitron';
+  font-family: "Orbitron";
 }
 
-.title h1{
-	color: rgb(0, 0, 0) !important;
-	letter-spacing: 3px;
-	overflow: hidden;
-	white-space: nowrap; 
-	-webkit-text-stroke: 0.1vw #c2760b;
-	text-shadow: 3.5px 3.5px #443763;
-	font-size: 128px;
-	margin: 0 auto;
-	animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+.title h1 {
+  color: rgb(0, 0, 0) !important;
+  letter-spacing: 3px;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-text-stroke: 0.1vw #c2760b;
+  text-shadow: 3.5px 3.5px #443763;
+  font-size: 128px;
+  margin: 0 auto;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
+.members {
+  /* background-color: rgb(36, 36, 36); */
+  background-image: url("/photos/Cybernetic Human@1-1440x714.jpg");
+}
 
+.team-member {
+  text-align: center;
+  /* background-color: rgb(255, 255, 255); */
+  padding: 20px;
+  width: 250px;
+  border-radius: 30px;
+}
 
+.member-photo {
+  width: 250px; /* Adjust the size as needed */
+  height: 250px; /* Adjust the size as needed */
+  border-radius: 50%; /* Make it circular */
+  overflow: hidden;
+  border: 5px solid rgb(253, 253, 253);
+  box-shadow: 0px 0px 30px rgba(119, 108, 209, 0.5);
+  /* transition: 0.1s ease-out; */
+  position: relative;
+  border: 2px solid rgb(119, 108, 209);
+  transition: transform 0.2s ease-out;
+}
 
+.member-photo:hover {
+  transform: scale(1.05);
+}
 
-.members{
-	/* background-color: rgb(36, 36, 36); */
-	background-image: url('/photos/Cybernetic Human@1-1440x714.jpg');
+.member-photo img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
 
-  }
+.member-name {
+  margin-top: 10px;
+  font-weight: 900;
+  text-align: center;
+  color: #e28a0d;
+  font-family: Orbitron, sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 0.0001px black;
+}
 
-  .team-member {
-    text-align: center;
-	/* background-color: rgb(255, 255, 255); */
-	padding: 20px;
-	width: 250px;
-	border-radius: 30px;
-  }
-
-  .member-photo {
-    width: 250px; /* Adjust the size as needed */
-    height: 250px; /* Adjust the size as needed */
-    border-radius: 50%; /* Make it circular */
-    overflow: hidden;
-	border: 5px solid rgb(253, 253, 253);
-	box-shadow: 0px 0px 30px rgba(119, 108, 209, 0.5);
-	/* transition: 0.1s ease-out; */
-	position: relative;
-	border: 2px solid rgb(119, 108, 209);
-	transition: transform .2s ease-out; 
-  }
-  
-  .member-photo:hover{
-	transform: scale(1.05);
-  }
-  
-  
-  .member-photo img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-
-  }
-  
-  
-  .member-name {
-    margin-top: 10px;
-    font-weight: 900;
-	text-align: center;
-	color: #e28a0d;
-	font-family:  Orbitron, sans-serif;
-	font-size: 1.1rem;
-	letter-spacing: 2px;
-	-webkit-text-stroke: 0.0001px black;
-  }
-
-.button-container { 
+.button-container {
   animation: glowing 20s linear infinite;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
   /* z-index: 0; */
   color: rgb(255, 255, 255);
@@ -523,8 +492,6 @@ canvas{
   border: 2px solid black;
 }
 
-
-
 .button-container:active {
   color: #f9f9f9;
 }
@@ -532,24 +499,32 @@ canvas{
 .button-container:active:after {
   background: transparent;
   color: #ffffff;
-
-
 }
 
 .button-container:hover:before {
   opacity: 1;
   color: #000;
-
 }
-.button-container:hover{
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+.button-container:hover {
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
   color: #000000;
-  font-size:large;
+  font-size: large;
 }
 
 .button-container:after {
   z-index: -1;
-  content: '';
+  content: "";
   /* position: absolute;
   width: 100%;
   height: 100%; */
@@ -559,162 +534,140 @@ canvas{
   border-radius: 10px;
   color: #ffffff;
   border: 0.5px solid black;
-
 }
 
 @keyframes glowing {
-  0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
-  100% { background-position: 0 0; }
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* responsive navbar */
 
-@media screen and (max-width:980px){
-  .navbar{
-      display:flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      position: fixed;
-      top: 90px;
-      z-index: 100;
-      right:-50%;
-      width:50%;
-      height: 90vh;
-      background: linear-gradient(#8e37ff ,  #010101);
-      padding:40px 0 0 10px;
-      transition: 0.6s ease-in-out;
-      border-top-left-radius: 10px; 
-      overflow:hidden;
-  
+@media screen and (max-width: 980px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 90px;
+    z-index: 100;
+    right: -50%;
+    width: 50%;
+    height: 90vh;
+    background: linear-gradient(#8e37ff, #010101);
+    padding: 40px 0 0 10px;
+    transition: 0.6s ease-in-out;
+    border-top-left-radius: 10px;
+    overflow: hidden;
   }
-  .navbar ul{
-      display:flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
-  .navbar a{
-   
+  .navbar a {
     color: rgb(255, 255, 255);
-  
   }
-  .navbar a:hover{
+  .navbar a:hover {
     color: rgb(255, 255, 255);
     background-color: rgb(13, 13, 13);
   }
-  
-  .navbar.active{
-      right:0px;
+
+  .navbar.active {
+    right: 0px;
   }
 
-  .navbar li{ 
-      margin-bottom: 30px;
-      font-size:17px;
-      cursor:pointer;
-  }
- 
-  #mobile{
-       padding: 10px;
-      display:block;
-      margin-left: auto;
+  .navbar li {
+    margin-bottom: 30px;
+    font-size: 17px;
+    cursor: pointer;
   }
 
-  #mobile i{
-      font-size: 30px;
-      cursor:pointer;
-     
+  #mobile {
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+  }
+
+  #mobile i {
+    font-size: 30px;
+    cursor: pointer;
   }
 }
 
-@media screen and (max-width:480px){
-  .navbar li{ 
+@media screen and (max-width: 480px) {
+  .navbar li {
     font-size: 12px;
   }
 }
 
-
-@media screen and (max-width:700px){
-
-   #root{
-    overflow-x: hidden;
-   }
-
-  .hero{
+@media screen and (max-width: 700px) {
+  #root {
     overflow-x: hidden;
   }
 
-  .hero-data{
+  .hero {
+    overflow-x: hidden;
+  }
+
+  .hero-data {
     min-width: 250px;
     flex-direction: column;
-   align-items: flex-start;
+    align-items: flex-start;
   }
 
-
-   .hero-text{
-   font-size: 8px;
-   min-width: 200px;
-   margin:50px 5px 10px 10px;
-   height: 155px;
-   padding: 2px;
-    }
-
-  
-
-    .globe{
-      z-index: -9;
-    }
-
-    .sphere{
-      min-width: 700px;
-      overflow: hidden;
-    }
-
-
-    .hero-text h1{
-      font-size: 18px;
-      margin: 5px;
-    }
-
-  .data{
-    padding-left:30px ;
-   margin-top: 20px;
-   background-color: #292929e4;
-   width: 100%;
+  .hero-text {
+    font-size: 8px;
+    min-width: 200px;
+    margin: 50px 5px 10px 10px;
+    height: 155px;
+    padding: 2px;
   }
 
-  .data h1{
+  .globe {
+    z-index: -9;
+  }
+
+  .sphere {
+    min-width: 700px;
+    overflow: hidden;
+  }
+
+  .hero-text h1 {
+    font-size: 18px;
+    margin: 5px;
+  }
+
+  .data {
+    padding-left: 30px;
+    margin-top: 20px;
+    background-color: #292929e4;
+    width: 100%;
+  }
+
+  .data h1 {
     font-size: large;
   }
 
-  body{
+  body {
     overflow-x: hidden;
   }
 
-
-  .games{
+  .games {
     flex-direction: column;
     font-size: 12px;
   }
 
-  .container{
+  .container {
     gap: 90px;
-   
   }
-
-  
 }
