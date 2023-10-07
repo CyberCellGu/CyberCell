@@ -64,7 +64,6 @@ function Hero() {
       <div className="hero">
         <div className="hero-main">
           <div className="hero-text">
-<
             <h1>CyberCell GU</h1>
             <p>Welcome to CyberCell GU, where we ignite Cybersecurity Awareness and Innovation. Join us in safeguarding the digital realm through cutting-edge events and initiatives. Our diverse team of dreamers, thinkers, and doers is united by a singular purpose to make the world better through knowledge. Join us today!</p>
             <div className="button">
