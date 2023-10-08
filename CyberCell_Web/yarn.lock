@@ -1078,7 +1078,6 @@
   resolved "https://registry.npmjs.org/@emotion/unitless/-/unitless-0.8.1.tgz"
   integrity sha512-KOEGMu6dmJZtpadb476IsZBclKvILjopjUii3V+7MnXIQCYh8W3NgNcgwo21n9LXZX6EDIKvqfjYxXebDwxKmQ==
 
-
 "@esbuild/win32-x64@0.18.20":
   version "0.18.20"
   resolved "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.18.20.tgz"
@@ -1198,7 +1197,6 @@
   resolved "https://registry.npmjs.org/@remix-run/router/-/router-1.8.0.tgz"
   integrity sha512-mrfKqIHnSZRyIzBcanNJmVQELTnX+qagEDlcKO90RgRBVOZGSGvZKeDihTRfWcqoDn5N/NkUcwWTccnpN18Tfg==
 
-
 "@rollup/plugin-babel@^6.0.3":
   version "6.0.4"
   resolved "https://registry.npmjs.org/@rollup/plugin-babel/-/plugin-babel-6.0.4.tgz"
@@ -1215,8 +1213,6 @@
     "@types/estree" "^1.0.0"
     estree-walker "^2.0.2"
     picomatch "^2.3.1"
-
-
 
 "@swc/core-win32-x64-msvc@1.3.82":
   version "1.3.82"
@@ -3078,7 +3074,6 @@ react-router@6.15.0:
   dependencies:
     "@remix-run/router" "1.8.0"
 
-
 react-scroll-trigger@^0.6.14:
   version "0.6.14"
   resolved "https://registry.npmjs.org/react-scroll-trigger/-/react-scroll-trigger-0.6.14.tgz"
@@ -3090,7 +3085,7 @@ react-scroll-trigger@^0.6.14:
     lodash.throttle "^4.1.1"
     prop-types "^15.8.1"
 
-react@^18.2.0, "react@>= 16.3.0", "react@>= 16.8.0", react@>=15, react@>=16.8:
+react@*, react@^18.2.0, "react@>= 16.3.0", "react@>= 16.8.0", react@>=15, react@>=16.8:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==

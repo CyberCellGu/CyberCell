@@ -4,6 +4,7 @@ import icon from "../../assets/hacker.png";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 // import logo from "../assets/cybercelllogoo.png";
+
 const Header = ({ updateColor }) => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
@@ -20,7 +21,7 @@ const Header = ({ updateColor }) => {
             <HashLink to="/#games">Events</HashLink>
           </li>
           <li>
-            {" "}
+          
             <Link to="/games">Games</Link>
           </li>
           <li>
