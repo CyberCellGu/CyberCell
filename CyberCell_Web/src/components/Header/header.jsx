@@ -28,7 +28,7 @@ const Header = ({ updateColor }) => {
             <Link to="hacktivists">Hacktivists</Link>
           </li>
           <li>
-            <HashLink>About</HashLink>
+            <HashLink to="/#about">About</HashLink>
           </li>
 
           <button>
