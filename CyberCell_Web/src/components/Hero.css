@@ -548,8 +548,8 @@ canvas {
 
 .about-img{
   position: relative;
-  height : auto;
-  width: auto;
+  height : 60%;
+  width: 60%;
 }
 
 .about-img:before, .about-img:after {
@@ -590,6 +590,24 @@ canvas {
   }
   100% {
     background-position: 0 0;
+  }
+}
+
+/* Responsive About  */
+
+@media screen and (max-width: 980px){
+  .about-img{
+  position: relative;
+  
+  }
+}
+
+@media screen and (max-width: 700px){
+
+  .about-img {
+    opacity: 0;
+    height : 0%;
+  width: 0%;
   }
 }
 
