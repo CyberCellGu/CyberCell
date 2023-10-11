@@ -37,9 +37,9 @@ const Signup = () => {
               Welcome! Please sign up to continue.
             </p>
           </div>
-
+<div className="display">
           {/* Additional signup fields */}
-          <div>
+          <div className="column">
             {/* Add more input fields here */}
             <div>
               <label htmlFor="name" className="signup__label">
@@ -94,7 +94,7 @@ const Signup = () => {
                 </i>
               </div>
             </div>
-            {/* <div>
+            <div>
               <label htmlFor="phoneNumber" className="signup__label">
                 Phone Number
               </label>
@@ -108,7 +108,8 @@ const Signup = () => {
                 onChange={(e) => setPhoneNumber(e.target.value)}
               />
             </div>
-
+            </div>
+<div className="col2">
             <div>
               <label htmlFor="registrationNumber" className="signup__label">
                 Registration Number
@@ -137,7 +138,7 @@ const Signup = () => {
                 value={course}
                 onChange={(e) => setCourse(e.target.value)}
               />
-            </div> */}
+            </div>
 
             <div>
               <label htmlFor="section" className="signup__label">
@@ -170,6 +171,7 @@ const Signup = () => {
             </div>
 
             {/* Rest of your signup form fields */}
+          </div>
           </div>
 
           {/* Signup button */}

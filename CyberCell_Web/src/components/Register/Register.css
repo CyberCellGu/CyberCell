@@ -218,6 +218,13 @@ img {
   text-decoration: none;
 }
 
+/* .column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+} */
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 360px) {
@@ -229,7 +236,7 @@ img {
 /* For medium devices */
 @media screen and (min-width: 576px) {
   .signup__form {
-    width: 450px;
+    width: 1050px;
     justify-self: center;
   }
 }
@@ -240,6 +247,21 @@ img {
     height: 100vh;
     display: grid;
     place-items: center;
+  }
+
+  .column{
+    /* display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column; */
+    width: 45%;
+    float: left;
+  }
+  .col2{
+    /* display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column; */
+    width: 45%;
+    float: right;
   }
 
   .signup__content {
