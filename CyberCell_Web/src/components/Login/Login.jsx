@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Login.css";
 import showHiddenPass from "./Loginfunction"; // Import the function
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
+import { Link} from "react-router-dom";
 
 const Login = () => {
   // State to manage password visibility
@@ -88,14 +89,15 @@ const Login = () => {
               <button type="submit" className="login__button">
                 Log In
               </button>
-              <button className="login__button login__button-ghost">
-                Sign Up
-              </button>
             </div>
 
             <a href="#" className="login__forgot">
               Forgot Password?
             </a>
+            <p className="login__register">
+              Don't have an account? 
+              <Link to="/signup">  SignUp</Link>
+            </p>
           </div>
         </form>
       </div>

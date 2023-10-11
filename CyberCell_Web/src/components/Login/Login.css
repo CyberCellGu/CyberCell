@@ -227,6 +227,19 @@ img {
   text-decoration: none;
 }
 
+.login__register {
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-semi-bold);
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.login__register a {
+  color: #0ef;
+  text-decoration: none;
+  font-weight: 500;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 360px) {
