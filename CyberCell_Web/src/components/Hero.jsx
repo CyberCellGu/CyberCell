@@ -11,6 +11,8 @@ import ScrollTrigger from 'react-scroll-trigger';
 import Footer from "./Footer/Footer";
 import Header from "./Header/header";
 
+import anime from "animejs";
+
 
 function Hero() {
   const [color, setColor] = useState("purple");
@@ -148,6 +150,20 @@ function Hero() {
               </span>
             </button>
           </Link>
+        </div>
+
+        <div id = "about" className="about">
+          <div className="title">  
+            <h1>About Us</h1>
+          </div>
+          <div className="about-container">
+            <div className="about-box">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repellat hic, exercitationem fuga recusandae autem dolores necessitatibus provident quibusdam amet beatae voluptate porro suscipit inventore asperiores doloribus nulla facilis vel eos nisi accusamus odit veritatis sint temporibus? Officia doloremque maxime ad numquam voluptatum accusamus accusantium quod vero distinctio omnis, pariatur dolorem eligendi sint commodi ratione autem illum harum perspiciatis ullam molestiae laudantium aliquid natus! Ut iure odio suscipit nulla, atque veritatis, autem tenetur nobis esse exercitationem quaerat quas rerum modi quam alias iusto, aut velit commodi doloribus quibusdam ipsum voluptate.</p>
+            </div>
+            <div className="about-img">
+              <img src="/public/ContentPhoto.png"/>
+            </div>
+          </div>
         </div>
 
         <div className="faq-container">
