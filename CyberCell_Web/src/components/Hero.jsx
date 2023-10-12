@@ -34,21 +34,21 @@ function Hero() {
   // faq
   const [faqs, setFaqs] = useState([
     {
-      question: "What is Lorem Ipsum?",
+      question: "What is this website about ?",
       answer:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "This website is an open-source community platform designed for cybersecurity enthusiasts. It serves as a hub for like-minded individuals to collaborate, share knowledge, and engage in discussions related to cybersecurity.",
       isOpen: false,
     },
     {
-      question: "Why do we use it?",
+      question: "Can I contribute to the website's content ?",
       answer:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "Absolutely! We encourage active participation from our members. You can contribute by writing articles, sharing your research, or even helping with website development if you have the skills.",
       isOpen: false,
     },
     {
-      question: "Where does it come from?",
+      question: "Is this website free to use ?",
       answer:
-        "Contrary to popular belief, Lorem Ipsum is not simply random text.",
+        "Yes, our platform is entirely open-source and free to use. We believe in making cybersecurity knowledge accessible to everyone.",
       isOpen: false,
     },
   ]);
@@ -167,23 +167,22 @@ function Hero() {
         </div>
 
         <div className="faq-container">
-          <h1>Frequently Asked Questions</h1>
-          <ul className="faq-list">
-            {faqs.map((faq, index) => (
-              <li className="faq-item" key={index}>
-                <div className="faq-question" onClick={() => toggleFAQ(index)}>
-                  <span
-                    className={`faq-icon ${faq.isOpen ? "open" : "closed"}`}
-                  >
-                    {faq.isOpen ? "-" : "+"}
-                  </span>
-                  {faq.question}
-                </div>
-                {faq.isOpen && <p className="faq-answer">{faq.answer}</p>}
-              </li>
-            ))}
-          </ul>
+  <h1>Frequently Asked Questions</h1>
+  <ul className="faq-list">
+    {faqs.map((faq, index) => (
+      <li className="faq-item" key={index}>
+        <div className="faq-question" onClick={() => toggleFAQ(index)}>
+          <span className={`faq-icon ${faq.isOpen ? "open" : "closed"}`}>
+            {faq.isOpen ? "-" : "+"}
+          </span>
+          <span className="faq-text">{faq.question}</span>
         </div>
+        {faq.isOpen && <p className="faq-answer">{faq.answer}</p>}
+      </li>
+    ))}
+  </ul>
+</div>
+ 
       </div>
 
 

@@ -356,17 +356,18 @@ canvas {
 }
 
 /* FAQ.css */
-
 .faq-container {
-  font-family: "Orbitron", sans-serif; /* Use Audiowide font */
-  background-color: #00000080;
+  font-family: "Orbitron", sans-serif;
+  /* background-color: #00000080; */
   color: white;
   margin: 0 auto;
   padding: 20px;
+  width: 80%; /* Adjust the width to your preference */
 }
 
 .faq-container h1 {
   letter-spacing: 5px;
+  margin-bottom: 20px; /* Add space below the title */
 }
 
 .faq-list {
@@ -376,6 +377,8 @@ canvas {
 
 .faq-item {
   margin-bottom: 20px;
+  border-bottom: 1px solid #555; /* Add a separating line between items */
+  padding-bottom: 15px; /* Add space between items */
 }
 
 .faq-question {
@@ -383,27 +386,35 @@ canvas {
   align-items: center;
   cursor: pointer;
   font-weight: bold;
-  transition: border-bottom 0.2s; /* Add transition for smooth effect */
+  transition: border-bottom 0.2s;
 }
 
 .faq-icon {
   margin-right: 10px;
   font-size: 24px;
   transition: transform 0.2s;
-  transform: translateY(1px); /* Adjust this value as needed */
+  transform: translateY(1px);
 }
 
 .faq-icon.open {
-  transform: rotate(0deg); /* Rotate the plus sign (+) */
+  transform: rotate(45deg); /* Rotate the plus sign to create a 'close' effect */
 }
 
 .faq-icon.closed {
-  transform: rotate(0deg); /* Keep the minus sign (-) straight */
+  transform: rotate(0deg);
+}
+
+.faq-text {
+  flex: 1; /* Expand to fill available space */
+  font-size: 18px; /* Adjust font size for better readability */
+  margin: 0; /* Remove default margin */
 }
 
 .faq-answer {
   margin-top: 10px;
+  line-height: 1.8;
 }
+
 
 .title {
   font-size: 3rem;
