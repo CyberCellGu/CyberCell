@@ -10,6 +10,7 @@
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 /* .hero{
@@ -56,9 +57,8 @@ body {
 .navbar a {
   text-decoration: none;
   color: white;
-  
 }
-.navbar li{
+.navbar li {
   padding: 15px 10px;
 }
 .navbar li:hover {
@@ -93,27 +93,17 @@ body {
 
 /* header and navbar css end */
 
-
-
-
-
-.hero-main{
- display: flex;
- flex-direction: row;
- justify-content:space-between;
- overflow-x: hidden;
- font-size: bold;
+.hero-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-x: hidden;
+  font-size: bold;
 }
-
 
 .sphere {
   min-width: 1200px;
 }
-
-
-
-
-
 
 .hero-text {
   min-width: 500px;
@@ -130,25 +120,20 @@ body {
   margin-bottom: 15px;
 }
 
-
-
 canvas {
-
   position: absolute;
   z-index: -10;
   width: 100%;
 }
 
-
 .button {
-  margin: 50px auto;  
+  margin: 50px auto;
   padding-left: 30px;
-
 }
 .explore {
   width: 70%;
   font-size: 100%;
-  padding:10px;
+  padding: 10px;
   color: white;
   text-align: center;
   cursor: pointer;
@@ -160,9 +145,6 @@ canvas {
   opacity: 0.9;
 }
 
-
-
-
 .hero-data {
   font-family: "Montserrat", sans-serif;
 
@@ -171,15 +153,43 @@ canvas {
   justify-content: space-evenly;
   align-items: center;
   padding: 30px;
-  background-color: rgb(36, 36, 36);
+  /* background-color: #090979;  */
+  background: rgb(6, 35, 182);
+  background: radial-gradient(
+    circle,
+    rgba(6, 35, 182, 1) 10%,
+    rgba(0, 11, 96, 1) 57%,
+    rgba(37, 2, 64, 1) 94%
+  );
   width: 100%;
 }
 
 .data {
-  border-left: 1px solid white;
-  padding: 10px 30px;
-  border-image: linear-gradient(to bottom, #ff4655, rgba(62, 9, 237, 0.567)) 1
-    100%;
+  padding: 20px 20px;
+  height: 140px;
+  /* width: 200px; */
+  width: 20vw;
+  user-select: none;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  transition: 0.25s ease;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.data h1 {
+  overflow: hidden;
+}
+
+.data:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+.data-img {
+  object-fit: contain;
+  width: 5vw;
 }
 
 .data h1 {
@@ -524,51 +534,62 @@ canvas {
   border: 0.5px solid black;
 }
 
-.about-container{
+.about-container {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin: 50px;
-  background-color: rgba(255, 255, 255,0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(1px);
   border-radius: 40px;
   padding: 43px;
-  box-shadow: 0px 0px 10px rgba(255, 255, 255,0.4);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
   font-family: "Orbitron", sans-serif; /* Use Audiowide font */
   color: white;
 }
 
-.about-box{
+.about-box {
   display: flex;
   flex-direction: column;
- justify-content: space-evenly ;
- margin-right : 9%;
- width : 90%;
+  justify-content: space-evenly;
+  margin-right: 9%;
+  width: 90%;
 }
 
-.about-img{
+.about-img {
   position: relative;
-  height : 60%;
+  height: 60%;
   width: 60%;
 }
 
-.about-img:before, .about-img:after {
+.about-img:before,
+.about-img:after {
   z-index: -1;
-  content: '';
+  content: "";
   position: absolute;
   width: calc(100% + 6px);
   height: calc(100% + 2px);
   top: -3px;
   left: -3px;
-  background: linear-gradient(45deg, #fc0090, #0000ff,#00ff00,
-              #ff0000,#ffff00,#fc0090,#0000ff,#00ff00,#ffff00);
+  background: linear-gradient(
+    45deg,
+    #fc0090,
+    #0000ff,
+    #00ff00,
+    #ff0000,
+    #ffff00,
+    #fc0090,
+    #0000ff,
+    #00ff00,
+    #ffff00
+  );
   background-size: 300%;
   animation: about-img 20s linear infinite;
 }
 .about-img:after {
   filter: blur(30px);
 }
-@keyframes about-img { 
+@keyframes about-img {
   0% {
     background-position: 0 0;
   }
@@ -579,7 +600,6 @@ canvas {
     background-position: 0 0;
   }
 }
-
 
 @keyframes glowing {
   0% {
@@ -595,19 +615,17 @@ canvas {
 
 /* Responsive About  */
 
-@media screen and (max-width: 980px){
-  .about-img{
-  position: relative;
-  
+@media screen and (max-width: 980px) {
+  .about-img {
+    position: relative;
   }
 }
 
-@media screen and (max-width: 700px){
-
+@media screen and (max-width: 700px) {
   .about-img {
     opacity: 0;
-    height : 0%;
-  width: 0%;
+    height: 0%;
+    width: 0%;
   }
 }
 
@@ -713,12 +731,22 @@ canvas {
   .data {
     padding-left: 30px;
     margin-top: 20px;
-    background-color: #292929e4;
+    background-color: white;
     width: 100%;
   }
 
   .data h1 {
     font-size: large;
+    font-weight: 900;
+    font-size: 25px;
+  }
+
+  .data-img {
+    min-width: 15vw;
+  }
+
+  .data p {
+    font-size: 18px;
   }
 
   body {
