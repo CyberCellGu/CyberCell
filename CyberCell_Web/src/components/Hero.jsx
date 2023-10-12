@@ -161,7 +161,7 @@ function Hero() {
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repellat hic, exercitationem fuga recusandae autem dolores necessitatibus provident quibusdam amet beatae voluptate porro suscipit inventore asperiores doloribus nulla facilis vel eos nisi accusamus odit veritatis sint temporibus? Officia doloremque maxime ad numquam voluptatum accusamus accusantium quod vero distinctio omnis, pariatur dolorem eligendi sint commodi ratione autem illum harum perspiciatis ullam molestiae laudantium aliquid natus! Ut iure odio suscipit nulla, atque veritatis, autem tenetur nobis esse exercitationem quaerat quas rerum modi quam alias iusto, aut velit commodi doloribus quibusdam ipsum voluptate.</p>
             </div>
             <div className="about-img">
-              <img src="/.photos/about_img1.png"/>
+              <img src="/public/ContentPhoto.png"/>
             </div>
           </div>
         </div>
