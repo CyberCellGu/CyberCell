@@ -89,27 +89,47 @@ function Hero() {
         <div className="hero-data">
 
           <div className="data">
-            <h1>
+          <div className="data-img">
+            <img src="https://www.shutterstock.com/image-vector/event-schedule-icon-260nw-606709283.jpg" alt="" />
+          </div>
+           <div>
+           <h1>
               <CountUp start={0} end={5} duration={2} delay={0}/>
             </h1>
             <p>Events Conducted</p>
+           </div>
           </div>
           <div className="data">
+          <div className="data-img">
+            <img src="https://static.vecteezy.com/system/resources/previews/005/005/794/non_2x/user-icon-in-trendy-flat-style-isolated-on-grey-background-user-symbol-for-your-web-site-design-logo-app-ui-illustration-eps10-free-vector.jpg" alt="" />
+          </div>
+            <div>
             <h1>
             <CountUp start={0} end={50} duration={5} delay={0}/>
             +
             </h1>
             <p>Team Members</p>
+            </div>
           </div>
           <div className="data">
+          <div className="data-img">
+            <img src="https://cdn.vectorstock.com/i/preview-lt/97/98/established-vector-42209798.webp" alt="" />
+          </div>
+            <div>
             <h1>
               2020
             </h1>
             <p>Established</p>
+            </div>
           </div>
           <div className="data">
-            <h1>Active 24/7</h1>
-            <p></p>
+          <div className="data-img">
+            <img src="https://img.freepik.com/premium-vector/247-hours-timer-symbol-black-color-flat-style_824631-673.jpg" alt="" />
+          </div>
+           <div>
+           <h1>24/7</h1>
+            <p>Active</p>
+           </div>
           </div>
         </div>
 
