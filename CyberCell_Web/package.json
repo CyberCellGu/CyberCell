@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "anime": "^0.1.2",
+    "axios": "^1.5.1",
     "react": "^18.2.0",
     "react-countup": "^6.4.2",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
+    "react-markdown": "^9.0.0",
     "react-router-dom": "^6.15.0",
     "react-router-hash-link": "^2.4.3",
     "react-scroll-trigger": "^0.6.14",
