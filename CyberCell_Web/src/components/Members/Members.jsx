@@ -37,20 +37,14 @@ const teamMembers = [
 function Members() {
   return (
     <div>
-      <div className="nav">
+      
         <div className="container">
-          <div className="content">
-            <h1>A community of cybersavvy superheroes </h1>
-            
-          </div>
-          <div className="image">
-            <div className="image-overlay">
+            <h1 className='content'>A community of cybersavvy superheroes </h1>
+            <div className="image">
               <img src="./ContentPhoto.png" alt="" />
             </div>
-          </div>
           
         </div>
-      </div>
 
       <div className="members">
         <div className="title">

@@ -29,6 +29,12 @@ body{
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
+.content{
+	max-width: 600px;
+	margin-inline: auto;
+	padding-inline: 10px ;
+	/* margin-right: 400px; */
+}
 
 @keyframes typing {
 	from { width: 0 }
@@ -50,36 +56,13 @@ body{
 	text-shadow: 2px 2px 10px rgb(119, 108, 209);
 
 }
-.content p{
-	font-weight: 100;
-	margin-bottom: 100px;
-	font-family: 'Audiowave', sans-serif;
-	flex-wrap: wrap;
-	color: rgb(0, 0, 0);
-	font-size: 1.2rem;
-}
-.content{
-	max-width: 700px;
-	display: flex;
-	flex-direction: column;
-	justify-content: start;
-	margin-inline: auto;
-	padding-inline: 20px ;
-	/* margin-right: 400px; */
-}
 
 .container{
-	padding: 10px;
 	/* background-image: url(./ContentPhoto.png) */
 	/* background-color: rgb(193, 101, 9); */
 	background: linear-gradient(#ea771a, rgb(30, 26, 26));
 	color: rgb(0, 0, 0);
 	/* height: 68vh; */
-	display: flex;
-	text-align: center;
-	flex-direction: row;
-	justify-content: space-between;
-	flex-wrap: wrap;
 
 }
 .image{
@@ -88,22 +71,13 @@ body{
 }
 .image img{
 	border: 2px solid rgb(0, 0, 0);
-	/* box-shadow: 0px 0px 10px rgb(119, 108, 209,0.5); */
+	box-shadow: 0px 0px 10px rgb(119, 108, 209,0.5);
 	border-radius: 10px;
 	z-index: 0;
 	height: 420px;
 	width: 600px;
 	margin-left: auto;
-	object-fit: cover;
 	
-}
-.image-overlay{
-	border-radius: 10px;
-	object-fit: cover;
-	z-index: 1;
-	height: 420px;
-	width: 100%;
-	transition: 0.2s ease-out;
 }
 
 .image-overlay:after{
