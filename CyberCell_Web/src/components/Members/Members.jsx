@@ -37,20 +37,20 @@ const teamMembers = [
 function Members() {
   return (
     <div>
-      
-        <div className="container">
-            <h1 className='content'>A community of cybersavvy superheroes </h1>
-            <div className="image">
-              <img src="./ContentPhoto.png" alt="" />
-            </div>
-          
-        </div>
 
       <div className="members">
         <div className="title">
           <h1>HACKTIVISTS</h1>
         </div>
         <div className="team-container">
+
+          <div className="container1">
+            <h1 className='heading'>A community of cybersavvy superheroes </h1>
+            <div className="image">
+              <img src="./ContentPhoto.png" alt="" />
+            </div>
+          
+        </div>
           {teamMembers.map((member, index) => (
             <div key={index} className="team-member">
               <div className="member-photo">
