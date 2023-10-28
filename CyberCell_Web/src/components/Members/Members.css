@@ -97,7 +97,8 @@ body{
     background: linear-gradient(to bottom, rgba(255,0,0,0) 0%,rgba(255,0,0,0.65) 100%);
 }
 .image img:hover{
-	transform: scale(1.01);
+	transform: scale(1.03);
+	transition: 0.5s ease-in-out;
 }
 .title{
 	font-size: 3rem;
@@ -140,7 +141,7 @@ body{
 	/* transition: 0.1s ease-out; */
 	position: relative;
 	border: 2px solid rgb(119, 108, 209);
-	transition: transform .2s ease-out; 
+	transition: transform .2s ease-in-out; 
   }
   .member-photo:hover{
 	transform: scale(1.05);
