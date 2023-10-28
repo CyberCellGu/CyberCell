@@ -42,11 +42,11 @@ function Members() {
         <div className="title">
           <h1>HACKTIVISTS</h1>
         </div>
-        <div className="team-container">
+        <div className="team-container ">
 
-          <div className="container1">
+          <div className="container1 ">
             <h1 className='heading'>A community of cybersavvy superheroes </h1>
-            <div className="image">
+            <div className="image maindiv span1">
               <img src="./ContentPhoto.png" alt="" />
             </div>
           
