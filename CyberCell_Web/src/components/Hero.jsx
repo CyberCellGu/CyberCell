@@ -11,6 +11,8 @@ import ScrollTrigger from 'react-scroll-trigger';
 import Footer from "./Footer/Footer";
 import Header from "./Header/header";
 
+import anime from "animejs";
+
 
 function Hero() {
   const [color, setColor] = useState("purple");
@@ -32,21 +34,21 @@ function Hero() {
   // faq
   const [faqs, setFaqs] = useState([
     {
-      question: "What is Lorem Ipsum?",
+      question: "What is this website about ?",
       answer:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "This website is an open-source community platform designed for cybersecurity enthusiasts. It serves as a hub for like-minded individuals to collaborate, share knowledge, and engage in discussions related to cybersecurity.",
       isOpen: false,
     },
     {
-      question: "Why do we use it?",
+      question: "Can I contribute to the website's content ?",
       answer:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "Absolutely! We encourage active participation from our members. You can contribute by writing articles, sharing your research, or even helping with website development if you have the skills.",
       isOpen: false,
     },
     {
-      question: "Where does it come from?",
+      question: "Is this website free to use ?",
       answer:
-        "Contrary to popular belief, Lorem Ipsum is not simply random text.",
+        "Yes, our platform is entirely open-source and free to use. We believe in making cybersecurity knowledge accessible to everyone.",
       isOpen: false,
     },
   ]);
@@ -87,27 +89,47 @@ function Hero() {
         <div className="hero-data">
 
           <div className="data">
-            <h1>
+          <div className="data-img">
+            <img src="https://www.shutterstock.com/image-vector/event-schedule-icon-260nw-606709283.jpg" alt="" />
+          </div>
+           <div>
+           <h1>
               <CountUp start={0} end={5} duration={2} delay={0}/>
             </h1>
             <p>Events Conducted</p>
+           </div>
           </div>
           <div className="data">
+          <div className="data-img">
+            <img src="https://static.vecteezy.com/system/resources/previews/005/005/794/non_2x/user-icon-in-trendy-flat-style-isolated-on-grey-background-user-symbol-for-your-web-site-design-logo-app-ui-illustration-eps10-free-vector.jpg" alt="" />
+          </div>
+            <div>
             <h1>
             <CountUp start={0} end={50} duration={5} delay={0}/>
             +
             </h1>
             <p>Team Members</p>
+            </div>
           </div>
           <div className="data">
+          <div className="data-img">
+            <img src="https://cdn.vectorstock.com/i/preview-lt/97/98/established-vector-42209798.webp" alt="" />
+          </div>
+            <div>
             <h1>
               2020
             </h1>
             <p>Established</p>
+            </div>
           </div>
           <div className="data">
-            <h1>Active 24/7</h1>
-            <p></p>
+          <div className="data-img">
+            <img src="https://img.freepik.com/premium-vector/247-hours-timer-symbol-black-color-flat-style_824631-673.jpg" alt="" />
+          </div>
+           <div>
+           <h1>24/7</h1>
+            <p>Active</p>
+           </div>
           </div>
         </div>
 
@@ -150,24 +172,37 @@ function Hero() {
           </Link>
         </div>
 
-        <div className="faq-container">
-          <h1>Frequently Asked Questions</h1>
-          <ul className="faq-list">
-            {faqs.map((faq, index) => (
-              <li className="faq-item" key={index}>
-                <div className="faq-question" onClick={() => toggleFAQ(index)}>
-                  <span
-                    className={`faq-icon ${faq.isOpen ? "open" : "closed"}`}
-                  >
-                    {faq.isOpen ? "-" : "+"}
-                  </span>
-                  {faq.question}
-                </div>
-                {faq.isOpen && <p className="faq-answer">{faq.answer}</p>}
-              </li>
-            ))}
-          </ul>
+        <div id = "about" className="about">
+          <div className="title">  
+            <h1>About Us</h1>
+          </div>
+          <div className="about-container">
+            <div className="about-box">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repellat hic, exercitationem fuga recusandae autem dolores necessitatibus provident quibusdam amet beatae voluptate porro suscipit inventore asperiores doloribus nulla facilis vel eos nisi accusamus odit veritatis sint temporibus? Officia doloremque maxime ad numquam voluptatum accusamus accusantium quod vero distinctio omnis, pariatur dolorem eligendi sint commodi ratione autem illum harum perspiciatis ullam molestiae laudantium aliquid natus! Ut iure odio suscipit nulla, atque veritatis, autem tenetur nobis esse exercitationem quaerat quas rerum modi quam alias iusto, aut velit commodi doloribus quibusdam ipsum voluptate.</p>
+            </div>
+            <div className="about-img">
+              <img src="/public/ContentPhoto.png"/>
+            </div>
+          </div>
         </div>
+
+        <div className="faq-container">
+  <h1>Frequently Asked Questions</h1>
+  <ul className="faq-list">
+    {faqs.map((faq, index) => (
+      <li className="faq-item" key={index}>
+        <div className="faq-question" onClick={() => toggleFAQ(index)}>
+          <span className={`faq-icon ${faq.isOpen ? "open" : "closed"}`}>
+            {faq.isOpen ? "-" : "+"}
+          </span>
+          <span className="faq-text">{faq.question}</span>
+        </div>
+        {faq.isOpen && <p className="faq-answer">{faq.answer}</p>}
+      </li>
+    ))}
+  </ul>
+</div>
+ 
       </div>
 
 

@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events_plural",
+  "info": {
+    "singularName": "events",
+    "pluralName": "events-plural",
+    "displayName": "Events",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Heading": {
+      "type": "richtext"
+    },
+    "Details": {
+      "type": "richtext"
+    },
+    "Time": {
+      "type": "time"
+    },
+    "Venue": {
+      "type": "string"
+    },
+    "Fees": {
+      "type": "string"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Date": {
+      "type": "date"
+    }
+  }
+}
