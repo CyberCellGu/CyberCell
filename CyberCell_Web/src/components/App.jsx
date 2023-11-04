@@ -1,5 +1,13 @@
 import { useState } from "react";
 import "./App.css";
+
+import About from "./About";
+
+function App() {
+  return (
+    <div className="App">
+      <About />
+    </div>
 import Hero from "./Hero";
 import Games from "./Games";
 import React from "react";
