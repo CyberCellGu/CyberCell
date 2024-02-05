@@ -150,7 +150,7 @@ function Hero() {
               </div>
             ))}
 
-            <Link className="button-container" to="/">
+            <Link className="button-container" to="/hacktivists">
               Learn More
             </Link>
           </div>

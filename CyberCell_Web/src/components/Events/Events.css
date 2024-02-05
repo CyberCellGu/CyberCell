@@ -5,7 +5,7 @@
 
 .title h1{
 	font-family: 'Orbitron', sans-serif;
-	font-size: 4.7rem;
+
 	text-align: center;
 	letter-spacing: 5px;
 	font-weight: 900;
@@ -39,5 +39,5 @@
 .data{
     margin: 20px;
     height: auto;
-    display: inline-block;
+    /* display: inline-block; */ 
 }
